@@ -1,14 +1,14 @@
 #' Run \code{netmeta}
 #'
 #' R package \code{\link[netmeta]{netmeta}} provides frequenstist methods 
-#' for network meta-analysis based on Rücker (2012) and Rücker (2014). 
+#' for network meta-analysis based on R??cker (2012) and R??cker (2014). 
 #' This function is used to run netmeta on a specified network 
 #' included in the database of network meta-analyses,
 #' which can be downloaded using function \code{\link{getNMADB}}. 
 #' @references 
-#'   Rücker G (2012) <doi:10.1002/jrsm.1058>.
+#'   R??cker G (2012) <doi:10.1002/jrsm.1058>.
 #'
-#'   Rücker G, Schwarzer G (2014) <doi:10.1002/sim.6236>.
+#'   R??cker G, Schwarzer G (2014) <doi:10.1002/sim.6236>.
 #'
 #' @param recid ID of network in database
 #' @param model "fixed" or "random"; specifies if fixed or random effects 
@@ -131,25 +131,32 @@ runnetmeta <- function(recid,model="random", measure="notset"){
     
     D <- indata
     
+    if(model=="fixed"){
+      comb.fixed<-T
+      comb.random<-F
+    }else{
+      comb.fixed<-F
+      comb.random<-T
+    }
     #network meta-analysis
     if (type=="long_binary"){
       Dpairs=netmeta::pairwise(treat=D$t
-                               ,event=D$r
-                               ,n=D$n
-                               , data=D
-                               , studlab =D$id
-                               , sm= sm
-                               , allstudies = TRUE)
+                              , event=D$r
+                              , n=D$n
+                              , data=D
+                              , studlab =D$id
+                              , sm= sm
+                              , allstudies = TRUE)
       metaNetw<-netmeta::netmeta(Dpairs$TE
-                                 ,Dpairs$seTE
-                                 ,Dpairs$treat1
-                                 ,Dpairs$treat2
-                                 ,Dpairs$studlab
-                                 ,data=Dpairs
-                                 ,sm=sm
-                                 ,comb.fixed =F
-                                 ,comb.random = T
-                                 , details.chkmultiarm=TRUE)
+                                ,Dpairs$seTE
+                                ,Dpairs$treat1
+                                ,Dpairs$treat2
+                                ,Dpairs$studlab
+                                ,data=Dpairs
+                                ,sm=sm
+                                ,fixed=comb.fixed
+                                ,random = comb.random
+                                ,details.chkmultiarm=TRUE)
     } 
     if (type=="long_continuous"){
       Dpairs=netmeta::pairwise(treat=D$t
@@ -167,8 +174,8 @@ runnetmeta <- function(recid,model="random", measure="notset"){
                                  ,Dpairs$studlab
                                  ,data=Dpairs
                                  ,sm=sm
-                                 ,comb.fixed =F
-                                 ,comb.random = T
+                                 ,fixed =comb.fixed
+                                 ,random = comb.random
                                  , details.chkmultiarm=TRUE
                                  , tol.multiarm=0.2)
     }
@@ -188,8 +195,8 @@ runnetmeta <- function(recid,model="random", measure="notset"){
                         ,Dpairs$studlab
                         ,data=Dpairs
                         ,sm=sm
-                        ,comb.fixed =F
-                        ,comb.random = T
+                        ,fixed =comb.fixed
+                        ,random = comb.random
                         ,details.chkmultiarm=TRUE)
     }
     if (type=="iv"){
@@ -200,8 +207,8 @@ runnetmeta <- function(recid,model="random", measure="notset"){
                                 ,studlab=D$id
                                 ,data=D
                                 ,sm=sm
-                                ,comb.fixed =F
-                                ,comb.random = T
+                                ,fixed =comb.fixed
+                                ,random = comb.random
                                 , details.chkmultiarm=TRUE
                                 , tol.multiarm=0.5)
     }
