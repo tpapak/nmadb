@@ -83,6 +83,8 @@
 #' ,\code{\link{readByID}}
 #' @export runnetmeta
 runnetmeta <- function(recid,model="random", measure="notset"){
+  if (!requireNamespace("netmeta", quietly=TRUE)) stop("Install netmeta to run network analyses.")
+  model <- match.arg(model, c("fixed", "random"))
   indata = readByID(recid)
   if(! is.null(indata)){
     type = indata$type
@@ -124,7 +126,7 @@ runnetmeta <- function(recid,model="random", measure="notset"){
                   , wide = {makelong()}
                   , iv = {indata$data}
                   )
-    C = getmetaNetw(data, type=longType(indata), model, sm, tau="NA")
+    C = getmetaNetw(data, type=longType(indata), model=model, sm=sm)
     return(C)
   }else{
     message("Unable to get dataset check internet connection")
@@ -139,7 +141,7 @@ runnetmeta <- function(recid,model="random", measure="notset"){
     
     #network meta-analysis
     if (type=="long_binary"){
-      Dpairs=netmeta::pairwise(treat=D$t
+      Dpairs=meta::pairwise(treat=D$t
                                ,event=D$r
                                ,n=D$n
                                , data=D
@@ -153,12 +155,12 @@ runnetmeta <- function(recid,model="random", measure="notset"){
                                  ,Dpairs$studlab
                                  ,data=Dpairs
                                  ,sm=sm
-                                 ,comb.fixed =F
-                                 ,comb.random = T
+                                 ,common = (model == "fixed")
+                                 ,random = (model == "random")
                                  , details.chkmultiarm=TRUE)
     } 
     if (type=="long_continuous"){
-      Dpairs=netmeta::pairwise(treat=D$t
+      Dpairs=meta::pairwise(treat=D$t
                                ,mean=D$y
                                ,sd=D$sd
                                ,n=D$n
@@ -173,13 +175,13 @@ runnetmeta <- function(recid,model="random", measure="notset"){
                                  ,Dpairs$studlab
                                  ,data=Dpairs
                                  ,sm=sm
-                                 ,comb.fixed =F
-                                 ,comb.random = T
+                                 ,common = (model == "fixed")
+                                 ,random = (model == "random")
                                  , details.chkmultiarm=TRUE
                                  , tol.multiarm=0.2)
     }
     if (type=="long_rate"){
-      Dpairs=netmeta::pairwise(treat=D$t
+      Dpairs=meta::pairwise(treat=D$t
                       ,event=D$r
                       ,n=D$n
                       ,time=D$time
@@ -194,8 +196,8 @@ runnetmeta <- function(recid,model="random", measure="notset"){
                         ,Dpairs$studlab
                         ,data=Dpairs
                         ,sm=sm
-                        ,comb.fixed =F
-                        ,comb.random = T
+                        ,common = (model == "fixed")
+                        ,random = (model == "random")
                         ,details.chkmultiarm=TRUE)
     }
     if (type=="iv"){
@@ -206,8 +208,8 @@ runnetmeta <- function(recid,model="random", measure="notset"){
                                 ,studlab=D$id
                                 ,data=D
                                 ,sm=sm
-                                ,comb.fixed =F
-                                ,comb.random = T
+                                ,common = (model == "fixed")
+                                ,random = (model == "random")
                                 , details.chkmultiarm=TRUE
                                 , tol.multiarm=0.5)
     }

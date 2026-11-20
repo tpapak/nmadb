@@ -1,37 +1,112 @@
-## nmadb - network meta-analysis database
-R package for accessing ISPM's database of Network meta-analyses.
-Provides the database table for quering and access to individual network data.
+# nmadb — network meta-analysis database
 
-## Installation for usage
-Required CRAN packages:
-- devtools
-```install.packages("devtools")```
-- readxl
-```install.packages("readxl")```
+NMADB provides a frozen catalogue of 1,670 network meta-analysis records and
+603 Excel datasets. REDCap is the interface for extraction forms and database
+updates. Public reads use the table bundled with this package and workbooks
+hosted on GitHub; they require no REDCap login or API token.
 
-Non-CRAN packages 
-- dataformatter
+## Install
+
+```r
+install.packages("remotes")
+remotes::install_github("tpapak/nmadb", ref="migration/github-datasets-20261120")
 ```
-library(devtools)
-install_github("esm-ispm-unibe-ch/dataformatter")
-install_github("esm-ispm-unibe-ch/nmadata")
-```
-Load nmadb
-```
+
+Version 1.3.0 requires `digest`, `jsonlite`, and `readxl`. Install `netmeta` and
+`meta` to run analyses. The package no longer requires devtools, V8, or JavaScript
+loaded from a remote URL at runtime.
+
+## Catalogue and datasets
+
+Public query and analysis functions retain their names and main return shapes:
+
+```r
 library(nmadb)
+catalog <- getNMADB()           # labelled columns, including Record.ID
+raw <- getNMADB(raw=TRUE)       # original variable names and string values
+getManifest()                  # database counts and snapshot resource hashes
+nmadatanames(catalog)
+listVerified()
+verifiedStudies()
+unverifiedStudies()
+network <- readByID("501321")
+# list(name, data, type, effect, format)
+exportData("501321", "network.xlsx")
 ```
-## Listing networks
-- The database is exported as a data.frame by the ```getNMADB()``` function. so one could do ```catalog = getNMADB()```
-- ```nmadatanames(catalog)``` gives refid_autor's name_year of networks in catalog
-- ```listVerified()```: get all records with usable* datasets
-*checked with ```netmeta```
 
-## Download individual networks
-- ```readByID = function(refid,format="long",path)```
-you can choose the format data will be **exported**, available formats are **long** (one
-treatment per row) and **wide** (one comparison per row), for networks being
-reported in **iv** format ```readByID``` outputs **iv**
+`inst/extdata/catalog.tsv` contains all original XML table fields plus
+`dataset_sha256` and `dataset_url`. Historical values are preserved, including
+values outside the original form's validation rules. `codebook.json` provides
+field labels, choices, field types, and original validation annotations.
+These describe the source snapshot, not subsequent changes to the live forms.
+The package reads this frozen snapshot without calling the source database.
+`database-manifest.json` records the snapshot date, record/dataset counts, and
+SHA-256 hashes and sizes of the table, codebook, and file manifest. These
+resources are checked before use. `getManifest()` exposes this information.
 
-### CAVEAT
-The validity of the database is not guaranteed -- NOT INTENDED FOR REVIEWS
+`datasets/manifest.json` maps record IDs to original filenames, SHA-256 hashes,
+byte sizes, and commit-pinned GitHub download URLs. Every workbook is verified
+before it replaces a requested destination file. Missing datasets raise a clear
+error. Publication references remain DOI links; PDFs are not hosted.
 
+## Analysis and verification
+
+```r
+install.packages(c("netmeta", "meta"))
+runnetmeta("481216", model="random", measure="OR")
+runnetmeta("481216", model="fixed")
+verifyData("481216")
+checkRecords(catalog[catalog$Record.ID %in% c("481216", "501321"), ])
+```
+
+`wide2long()`, `getmetaNetw()`, and `isOutcomeCompatibleWithMeasure()` remain
+available. Conversion runs locally in R. Fixed and random model choices are
+passed through to current `netmeta`. Historical incomplete workbooks or
+atypical effect measures may fail analysis; preserving a workbook does not
+establish its scientific validity.
+
+## Snapshot publishing and compatibility
+
+Source data collection and snapshot publishing are maintainer workflows outside
+this R package. The source database can be exported as XML in batches, validated,
+and published as a new release. Public package users never call that database.
+
+The CRAN package contains no REDCap client, endpoint, token handling, database
+write functions, RCurl dependency, V8 dependency, or JavaScript execution.
+`verifyData()` and `checkRecords()` only return local results. Their former
+`updateRecord` and `updateDB` arguments have been removed, along with
+`updateVerifiedStatus()`, `importreq()`, `uploaddatasets()`, and the API constants.
+`response()`, `recs()`, and `havedata()` remain snapshot-only query helpers;
+`filename()` simply constructs a local filename.
+
+The bundled file manifest's `file_url` values currently point to GitHub, but
+retrieval is host-independent: any download URL returning the expected bytes
+can be used in a future snapshot. A SHA-256 mismatch always raises an error.
+
+## Optional bundled workbooks
+
+An offline distribution can include original workbooks under
+`inst/extdata/datasets/<sha256>.xlsx`. `readByID()` and `exportData()` use a
+bundled workbook before trying its external URL. Both routes verify the same
+original byte size and SHA-256. R's `data/` directory is for R data objects;
+`inst/extdata/` is the appropriate directory for original Excel files.
+
+The regular package keeps the full 15.8 MB collection external to keep the
+CRAN distribution small. An offline GitHub distribution can bundle all files.
+The `nmadb.dataset_root` option can instead point to a local repository checkout
+without copying files into an installed package.
+
+## Local verification
+
+```sh
+python3 datasets/verify.py
+```
+
+For offline package integration tests, set `NMADB_TEST_CHECKOUT` to this checkout
+and run `tests/regression.R` with the installed package. This checks representative
+binary, continuous, survival, rate, and wide-labelled networks, model selection,
+verification results, and rejection of an altered workbook. Ordinary package
+checks do not upload anything or require network access.
+
+Database contents are not guaranteed valid and are not intended to substitute
+for study selection and validation in a systematic review.

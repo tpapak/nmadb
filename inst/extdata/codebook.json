@@ -1,0 +1,4070 @@
+[
+  {
+    "name": "record_id",
+    "label": "Record ID",
+    "field_type": "text",
+    "validation": "int",
+    "choices": {}
+  },
+  {
+    "name": "redcap_data_access_group",
+    "label": "Data Access Group",
+    "field_type": "",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "first_author",
+    "label": "First Author",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "year",
+    "label": "Year",
+    "field_type": "text",
+    "validation": "date_ymd",
+    "choices": {}
+  },
+  {
+    "name": "country___4",
+    "label": "Country (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___248",
+    "label": "Country (choice=248)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___8",
+    "label": "Country (choice=8)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___12",
+    "label": "Country (choice=12)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___16",
+    "label": "Country (choice=16)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___20",
+    "label": "Country (choice=20)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___24",
+    "label": "Country (choice=24)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___660",
+    "label": "Country (choice=660)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___10",
+    "label": "Country (choice=10)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___28",
+    "label": "Country (choice=28)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___32",
+    "label": "Country (choice=32)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___51",
+    "label": "Country (choice=51)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___533",
+    "label": "Country (choice=533)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___36",
+    "label": "Country (choice=36)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___40",
+    "label": "Country (choice=40)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___31",
+    "label": "Country (choice=31)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___44",
+    "label": "Country (choice=44)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___48",
+    "label": "Country (choice=48)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___50",
+    "label": "Country (choice=50)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___52",
+    "label": "Country (choice=52)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___112",
+    "label": "Country (choice=112)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___56",
+    "label": "Country (choice=56)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___84",
+    "label": "Country (choice=84)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___204",
+    "label": "Country (choice=204)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___60",
+    "label": "Country (choice=60)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___64",
+    "label": "Country (choice=64)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___68",
+    "label": "Country (choice=68)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___70",
+    "label": "Country (choice=70)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___72",
+    "label": "Country (choice=72)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___74",
+    "label": "Country (choice=74)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___76",
+    "label": "Country (choice=76)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___92",
+    "label": "Country (choice=92)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___86",
+    "label": "Country (choice=86)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___96",
+    "label": "Country (choice=96)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___100",
+    "label": "Country (choice=100)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___854",
+    "label": "Country (choice=854)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___108",
+    "label": "Country (choice=108)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___116",
+    "label": "Country (choice=116)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___120",
+    "label": "Country (choice=120)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___124",
+    "label": "Country (choice=124)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___132",
+    "label": "Country (choice=132)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___136",
+    "label": "Country (choice=136)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___140",
+    "label": "Country (choice=140)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___148",
+    "label": "Country (choice=148)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___152",
+    "label": "Country (choice=152)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___156",
+    "label": "Country (choice=156)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___344",
+    "label": "Country (choice=344)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___446",
+    "label": "Country (choice=446)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___162",
+    "label": "Country (choice=162)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___166",
+    "label": "Country (choice=166)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___170",
+    "label": "Country (choice=170)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___174",
+    "label": "Country (choice=174)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___178",
+    "label": "Country (choice=178)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___180",
+    "label": "Country (choice=180)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___184",
+    "label": "Country (choice=184)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___188",
+    "label": "Country (choice=188)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___384",
+    "label": "Country (choice=384)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___191",
+    "label": "Country (choice=191)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___192",
+    "label": "Country (choice=192)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___196",
+    "label": "Country (choice=196)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___203",
+    "label": "Country (choice=203)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___208",
+    "label": "Country (choice=208)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___262",
+    "label": "Country (choice=262)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___212",
+    "label": "Country (choice=212)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___214",
+    "label": "Country (choice=214)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___218",
+    "label": "Country (choice=218)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___818",
+    "label": "Country (choice=818)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___222",
+    "label": "Country (choice=222)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___226",
+    "label": "Country (choice=226)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___232",
+    "label": "Country (choice=232)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___233",
+    "label": "Country (choice=233)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___231",
+    "label": "Country (choice=231)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___238",
+    "label": "Country (choice=238)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___234",
+    "label": "Country (choice=234)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___242",
+    "label": "Country (choice=242)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___246",
+    "label": "Country (choice=246)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___250",
+    "label": "Country (choice=250)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___254",
+    "label": "Country (choice=254)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___258",
+    "label": "Country (choice=258)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___260",
+    "label": "Country (choice=260)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___266",
+    "label": "Country (choice=266)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___270",
+    "label": "Country (choice=270)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___268",
+    "label": "Country (choice=268)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___276",
+    "label": "Country (choice=276)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___288",
+    "label": "Country (choice=288)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___292",
+    "label": "Country (choice=292)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___300",
+    "label": "Country (choice=300)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___304",
+    "label": "Country (choice=304)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___308",
+    "label": "Country (choice=308)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___312",
+    "label": "Country (choice=312)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___316",
+    "label": "Country (choice=316)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___320",
+    "label": "Country (choice=320)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___831",
+    "label": "Country (choice=831)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___324",
+    "label": "Country (choice=324)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___624",
+    "label": "Country (choice=624)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___328",
+    "label": "Country (choice=328)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___332",
+    "label": "Country (choice=332)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___334",
+    "label": "Country (choice=334)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___336",
+    "label": "Country (choice=336)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___340",
+    "label": "Country (choice=340)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___348",
+    "label": "Country (choice=348)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___352",
+    "label": "Country (choice=352)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___356",
+    "label": "Country (choice=356)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___360",
+    "label": "Country (choice=360)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___364",
+    "label": "Country (choice=364)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___368",
+    "label": "Country (choice=368)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___372",
+    "label": "Country (choice=372)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___833",
+    "label": "Country (choice=833)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___376",
+    "label": "Country (choice=376)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___380",
+    "label": "Country (choice=380)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___388",
+    "label": "Country (choice=388)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___392",
+    "label": "Country (choice=392)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___832",
+    "label": "Country (choice=832)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___400",
+    "label": "Country (choice=400)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___398",
+    "label": "Country (choice=398)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___404",
+    "label": "Country (choice=404)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___296",
+    "label": "Country (choice=296)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___408",
+    "label": "Country (choice=408)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___410",
+    "label": "Country (choice=410)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___414",
+    "label": "Country (choice=414)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___417",
+    "label": "Country (choice=417)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___418",
+    "label": "Country (choice=418)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___428",
+    "label": "Country (choice=428)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___422",
+    "label": "Country (choice=422)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___426",
+    "label": "Country (choice=426)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___430",
+    "label": "Country (choice=430)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___434",
+    "label": "Country (choice=434)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___438",
+    "label": "Country (choice=438)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___440",
+    "label": "Country (choice=440)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___442",
+    "label": "Country (choice=442)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___807",
+    "label": "Country (choice=807)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___450",
+    "label": "Country (choice=450)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___454",
+    "label": "Country (choice=454)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___458",
+    "label": "Country (choice=458)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___462",
+    "label": "Country (choice=462)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___466",
+    "label": "Country (choice=466)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___470",
+    "label": "Country (choice=470)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___584",
+    "label": "Country (choice=584)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___474",
+    "label": "Country (choice=474)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___478",
+    "label": "Country (choice=478)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___480",
+    "label": "Country (choice=480)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___175",
+    "label": "Country (choice=175)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___484",
+    "label": "Country (choice=484)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___583",
+    "label": "Country (choice=583)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___498",
+    "label": "Country (choice=498)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___492",
+    "label": "Country (choice=492)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___496",
+    "label": "Country (choice=496)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___499",
+    "label": "Country (choice=499)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___500",
+    "label": "Country (choice=500)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___504",
+    "label": "Country (choice=504)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___508",
+    "label": "Country (choice=508)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___104",
+    "label": "Country (choice=104)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___516",
+    "label": "Country (choice=516)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___520",
+    "label": "Country (choice=520)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___524",
+    "label": "Country (choice=524)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___528",
+    "label": "Country (choice=528)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___530",
+    "label": "Country (choice=530)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___540",
+    "label": "Country (choice=540)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___554",
+    "label": "Country (choice=554)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___558",
+    "label": "Country (choice=558)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___562",
+    "label": "Country (choice=562)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___566",
+    "label": "Country (choice=566)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___570",
+    "label": "Country (choice=570)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___574",
+    "label": "Country (choice=574)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___580",
+    "label": "Country (choice=580)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___578",
+    "label": "Country (choice=578)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___512",
+    "label": "Country (choice=512)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___586",
+    "label": "Country (choice=586)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___585",
+    "label": "Country (choice=585)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___275",
+    "label": "Country (choice=275)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___591",
+    "label": "Country (choice=591)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___598",
+    "label": "Country (choice=598)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___600",
+    "label": "Country (choice=600)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___604",
+    "label": "Country (choice=604)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___608",
+    "label": "Country (choice=608)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___612",
+    "label": "Country (choice=612)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___616",
+    "label": "Country (choice=616)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___620",
+    "label": "Country (choice=620)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___630",
+    "label": "Country (choice=630)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___634",
+    "label": "Country (choice=634)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___638",
+    "label": "Country (choice=638)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___642",
+    "label": "Country (choice=642)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___643",
+    "label": "Country (choice=643)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___646",
+    "label": "Country (choice=646)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___652",
+    "label": "Country (choice=652)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___654",
+    "label": "Country (choice=654)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___659",
+    "label": "Country (choice=659)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___662",
+    "label": "Country (choice=662)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___663",
+    "label": "Country (choice=663)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___666",
+    "label": "Country (choice=666)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___670",
+    "label": "Country (choice=670)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___882",
+    "label": "Country (choice=882)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___674",
+    "label": "Country (choice=674)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___678",
+    "label": "Country (choice=678)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___682",
+    "label": "Country (choice=682)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___686",
+    "label": "Country (choice=686)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___688",
+    "label": "Country (choice=688)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___690",
+    "label": "Country (choice=690)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___694",
+    "label": "Country (choice=694)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___702",
+    "label": "Country (choice=702)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___703",
+    "label": "Country (choice=703)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___705",
+    "label": "Country (choice=705)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___90",
+    "label": "Country (choice=90)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___706",
+    "label": "Country (choice=706)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___710",
+    "label": "Country (choice=710)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___239",
+    "label": "Country (choice=239)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___728",
+    "label": "Country (choice=728)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___724",
+    "label": "Country (choice=724)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___144",
+    "label": "Country (choice=144)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___736",
+    "label": "Country (choice=736)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___740",
+    "label": "Country (choice=740)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___744",
+    "label": "Country (choice=744)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___748",
+    "label": "Country (choice=748)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___752",
+    "label": "Country (choice=752)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___756",
+    "label": "Country (choice=756)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___760",
+    "label": "Country (choice=760)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___158",
+    "label": "Country (choice=158)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___762",
+    "label": "Country (choice=762)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___834",
+    "label": "Country (choice=834)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___764",
+    "label": "Country (choice=764)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___626",
+    "label": "Country (choice=626)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___768",
+    "label": "Country (choice=768)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___772",
+    "label": "Country (choice=772)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___776",
+    "label": "Country (choice=776)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___780",
+    "label": "Country (choice=780)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___788",
+    "label": "Country (choice=788)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___792",
+    "label": "Country (choice=792)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___795",
+    "label": "Country (choice=795)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___796",
+    "label": "Country (choice=796)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___798",
+    "label": "Country (choice=798)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___800",
+    "label": "Country (choice=800)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___804",
+    "label": "Country (choice=804)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___784",
+    "label": "Country (choice=784)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___826",
+    "label": "Country (choice=826)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___840",
+    "label": "Country (choice=840)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___581",
+    "label": "Country (choice=581)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___858",
+    "label": "Country (choice=858)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___860",
+    "label": "Country (choice=860)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___548",
+    "label": "Country (choice=548)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___862",
+    "label": "Country (choice=862)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___704",
+    "label": "Country (choice=704)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___850",
+    "label": "Country (choice=850)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___876",
+    "label": "Country (choice=876)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___732",
+    "label": "Country (choice=732)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___887",
+    "label": "Country (choice=887)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___894",
+    "label": "Country (choice=894)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "country___716",
+    "label": "Country (choice=716)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "journal_name",
+    "label": "Journal Name",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "title",
+    "label": "Title",
+    "field_type": "textarea",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "doi",
+    "label": "DOI",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "number_of_studies",
+    "label": "Number of Studies",
+    "field_type": "text",
+    "validation": "int",
+    "choices": {}
+  },
+  {
+    "name": "number_of_treatments",
+    "label": "Number of Treatments",
+    "field_type": "text",
+    "validation": "int",
+    "choices": {}
+  },
+  {
+    "name": "control_intervetion",
+    "label": "Control intervetion",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "intervention_comparison_ty",
+    "label": "Intervention comparison type",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "pharmacological vs pharmacological",
+      "2": "pharmacological vs placebo",
+      "3": "non-pharmacological vs any"
+    }
+  },
+  {
+    "name": "includes_complex_intervent",
+    "label": "Includes Complex Interventions",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Unclear"
+    }
+  },
+  {
+    "name": "includes_different_doses",
+    "label": "Includes different treatment doses",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Unclear"
+    }
+  },
+  {
+    "name": "model_for_different_doses",
+    "label": "Did the model account for different treatment doses?",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "Yes",
+      "2": "No - split doses",
+      "3": "No - lump doses",
+      "4": "No - split and lump doses",
+      "5": "No - group doses",
+      "6": "No - Other"
+    }
+  },
+  {
+    "name": "doses_model_other",
+    "label": "Dose model description",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "pdf",
+    "label": "PDF",
+    "field_type": "file",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "field_name",
+    "label": "Field Name",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "field_code",
+    "label": "Field Code",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10",
+      "11": "11",
+      "12": "12",
+      "13": "13",
+      "14": "14",
+      "15": "15",
+      "16": "16",
+      "17": "17",
+      "18": "18",
+      "19": "19",
+      "20": "20",
+      "21": "21",
+      "22": "22",
+      "23": "23",
+      "24": "24",
+      "25": "25",
+      "26": "26",
+      "29": "Dentistry",
+      "30": "Education",
+      "27": "Other medical",
+      "28": "Other non-medical"
+    }
+  },
+  {
+    "name": "study_characteristics_complete",
+    "label": "Complete?",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "0": "Incomplete",
+      "1": "Unverified",
+      "2": "Complete"
+    }
+  },
+  {
+    "name": "primary_outcome",
+    "label": "Primary Outcome",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "description_of_the_outcome",
+    "label": "Description of the outcome(s)",
+    "field_type": "textarea",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "effectiveness_safety",
+    "label": "Effectiveness-Safety",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "Effectiveness",
+      "2": "Safety",
+      "3": "Unclear"
+    }
+  },
+  {
+    "name": "harmful_beneficial_outcome",
+    "label": "Harmful/Beneficial Outcome",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "Harmful",
+      "2": "Beneficial",
+      "3": "Unclear"
+    }
+  },
+  {
+    "name": "type_of_outcome",
+    "label": "Type of Outcome",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "Binary",
+      "2": "Continuous",
+      "3": "Survival",
+      "4": "Rate",
+      "5": "Unclear"
+    }
+  },
+  {
+    "name": "objectivity",
+    "label": "Objectivity of outcome",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "Objective",
+      "2": "Semi-objective",
+      "3": "Subjective",
+      "4": "Unclear"
+    }
+  },
+  {
+    "name": "effect_measure",
+    "label": "Effect Measure",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "odds ratio",
+      "2": "risk ratio",
+      "3": "risk difference",
+      "4": "mean difference",
+      "5": "standardized mean difference",
+      "6": "hazard ratio",
+      "7": "rate ratio",
+      "8": "other"
+    }
+  },
+  {
+    "name": "other_effect_measure",
+    "label": "Effect Measure Other",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "indirect_method___1",
+    "label": "Indirect Method (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "indirect_method___2",
+    "label": "Indirect Method (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "indirect_method___3",
+    "label": "Indirect Method (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "indirect_method___4",
+    "label": "Indirect Method (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "indirect_method___5",
+    "label": "Indirect Method (choice=5)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "indirect_method___6",
+    "label": "Indirect Method (choice=6)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "indirect_method_other",
+    "label": "Other indirect method",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "framework___1",
+    "label": "Framework (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "framework___2",
+    "label": "Framework (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "framework___3",
+    "label": "Framework (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "analysis_methods_complete",
+    "label": "Complete?",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "0": "Incomplete",
+      "1": "Unverified",
+      "2": "Complete"
+    }
+  },
+  {
+    "name": "assessment_of_consistency___1",
+    "label": "Assessment of consistency assumption (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "assessment_of_consistency___2",
+    "label": "Assessment of consistency assumption (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "assessment_of_consistency___3",
+    "label": "Assessment of consistency assumption (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "assessment_of_consistency___4",
+    "label": "Assessment of consistency assumption (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "assessment_of_consistency___5",
+    "label": "Assessment of consistency assumption (choice=5)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "assessment_of_consistency___6",
+    "label": "Assessment of consistency assumption (choice=6)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "assessment_of_consistency___7",
+    "label": "Assessment of consistency assumption (choice=7)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "assessment_of_consistency___8",
+    "label": "Assessment of consistency assumption (choice=8)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "assessment_of_consistency___9",
+    "label": "Assessment of consistency assumption (choice=9)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "assessment_of_consistency___10",
+    "label": "Assessment of consistency assumption (choice=10)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "other_consistency",
+    "label": "Assessment of consistency assumption: Other",
+    "field_type": "textarea",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "inconsistency_heterogeneity_methods___1",
+    "label": "Models used to explore inconsistency or heterogeneity (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "inconsistency_heterogeneity_methods___2",
+    "label": "Models used to explore inconsistency or heterogeneity (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "inconsistency_heterogeneity_methods___3",
+    "label": "Models used to explore inconsistency or heterogeneity (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "inconsistency_heterogeneity_methods___4",
+    "label": "Models used to explore inconsistency or heterogeneity (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "assessment_of_transitivity",
+    "label": "Assessment of Transitivity",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "fixed_effect_or_random_eff",
+    "label": "Fixed effect or Random effects model",
+    "field_type": "radio",
+    "validation": "",
+    "choices": {
+      "1": "Fixed effect",
+      "2": "Random effects",
+      "3": "Both FE and RE",
+      "4": "Unclear"
+    }
+  },
+  {
+    "name": "rationale_for_fe_or_re_pro",
+    "label": "Rationale for FE or RE provided",
+    "field_type": "textarea",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "assumption_for_heterogenei",
+    "label": "Assumption for heterogeneity in Random Effects model",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "1": "common",
+      "2": "unstructured",
+      "3": "other",
+      "4": "unclear",
+      "5": "NR",
+      "6": "NA"
+    }
+  },
+  {
+    "name": "assumption_heter_other",
+    "label": "Assumption for heterogeneity Other",
+    "field_type": "textarea",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "heterogeneity_estimator_pr",
+    "label": "Heterogeneity estimator/prior",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "mantel_haenszel_peto_inver___1",
+    "label": "Mantel Haenszel / Peto / Inverse Variance Method (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "mantel_haenszel_peto_inver___2",
+    "label": "Mantel Haenszel / Peto / Inverse Variance Method (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "mantel_haenszel_peto_inver___3",
+    "label": "Mantel Haenszel / Peto / Inverse Variance Method (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "mantel_haenszel_peto_inver___4",
+    "label": "Mantel Haenszel / Peto / Inverse Variance Method (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "mantel_haenszel_peto_inver___5",
+    "label": "Mantel Haenszel / Peto / Inverse Variance Method (choice=5)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "mantel_haenszel_peto_inver___6",
+    "label": "Mantel Haenszel / Peto / Inverse Variance Method (choice=6)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "mantel_haenszel_peto_inver___7",
+    "label": "Mantel Haenszel / Peto / Inverse Variance Method (choice=7)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "synthesis_other",
+    "label": "Other synthesis method",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "assessment_of_publication",
+    "label": "Assessment of publication bias",
+    "field_type": "radio",
+    "validation": "",
+    "choices": {
+      "1": "Yes",
+      "2": "NR"
+    }
+  },
+  {
+    "name": "method_used_to_assess_publ",
+    "label": "Method used to assess publication bias",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "ranking_metric___1",
+    "label": "Ranking metric (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "ranking_metric___2",
+    "label": "Ranking metric (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "ranking_metric___3",
+    "label": "Ranking metric (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "ranking_metric___4",
+    "label": "Ranking metric (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "ranking_metric___5",
+    "label": "Ranking metric (choice=5)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "ranking_metric___6",
+    "label": "Ranking metric (choice=6)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "ranking_metric___7",
+    "label": "Ranking metric (choice=7)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "ranking_metric___8",
+    "label": "Ranking metric (choice=8)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "ranking_other",
+    "label": "Other Ranking",
+    "field_type": "textarea",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "reporting_of_effect_sizes",
+    "label": "Reporting of effect sizes",
+    "field_type": "radio",
+    "validation": "",
+    "choices": {
+      "1": "All",
+      "2": "Subset",
+      "3": "None"
+    }
+  },
+  {
+    "name": "ipd",
+    "label": "Individual participant data",
+    "field_type": "yesno",
+    "validation": "",
+    "choices": {
+      "1": "Yes",
+      "0": "No"
+    }
+  },
+  {
+    "name": "missing_participant_data_reported",
+    "label": "Was missing data reported",
+    "field_type": "radio",
+    "validation": "",
+    "choices": {
+      "1": "Yes",
+      "2": "NR"
+    }
+  },
+  {
+    "name": "method_for_missing_data",
+    "label": "Method for missing data",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "funding_source",
+    "label": "Funding Source",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "funding_type___1",
+    "label": "Funding Type (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "funding_type___2",
+    "label": "Funding Type (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "funding_type___3",
+    "label": "Funding Type (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "funding_type___4",
+    "label": "Funding Type (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "funder_involvement",
+    "label": "Was the funder involved in the analysis and reporting of results?",
+    "field_type": "radio",
+    "validation": "",
+    "choices": {
+      "1": "Yes",
+      "2": "No",
+      "3": "NR",
+      "4": "NA"
+    }
+  },
+  {
+    "name": "prisma_nma_followed",
+    "label": "Was the PRISMA-NMA followed for reporting by the authors?",
+    "field_type": "radio",
+    "validation": "",
+    "choices": {
+      "1": "Yes",
+      "2": "NR"
+    }
+  },
+  {
+    "name": "nma_model_validity_and_reporting_complete",
+    "label": "Complete?",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "0": "Incomplete",
+      "1": "Unverified",
+      "2": "Complete"
+    }
+  },
+  {
+    "name": "pr_title___1",
+    "label": "TITLE (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_title___2",
+    "label": "TITLE (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___1",
+    "label": "ABSTRACT (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___2",
+    "label": "ABSTRACT (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___3",
+    "label": "ABSTRACT (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___4",
+    "label": "ABSTRACT (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___5",
+    "label": "ABSTRACT (choice=5)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___6",
+    "label": "ABSTRACT (choice=6)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___7",
+    "label": "ABSTRACT (choice=7)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___8",
+    "label": "ABSTRACT (choice=8)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___9",
+    "label": "ABSTRACT (choice=9)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___10",
+    "label": "ABSTRACT (choice=10)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___11",
+    "label": "ABSTRACT (choice=11)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___12",
+    "label": "ABSTRACT (choice=12)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_abstract___13",
+    "label": "ABSTRACT (choice=13)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_intro___1",
+    "label": "INTRODUCTION (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_intro___2",
+    "label": "INTRODUCTION (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___1",
+    "label": "METHODS (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___2",
+    "label": "METHODS (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___3",
+    "label": "METHODS (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___4",
+    "label": "METHODS (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___5",
+    "label": "METHODS (choice=5)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___6",
+    "label": "METHODS (choice=6)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___7",
+    "label": "METHODS (choice=7)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___8",
+    "label": "METHODS (choice=8)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___9",
+    "label": "METHODS (choice=9)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___10",
+    "label": "METHODS (choice=10)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___11",
+    "label": "METHODS (choice=11)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___12",
+    "label": "METHODS (choice=12)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___13",
+    "label": "METHODS (choice=13)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___14",
+    "label": "METHODS (choice=14)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___15",
+    "label": "METHODS (choice=15)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___16",
+    "label": "METHODS (choice=16)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_methods___17",
+    "label": "METHODS (choice=17)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_meth_analysis___1",
+    "label": "Description of analysis methods (e.g. NMA method) (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_meth_analysis___2",
+    "label": "Description of analysis methods (e.g. NMA method) (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_meth_analysis___3",
+    "label": "Description of analysis methods (e.g. NMA method) (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_meth_analysis___4",
+    "label": "Description of analysis methods (e.g. NMA method) (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_meth_analysis_xtra___1",
+    "label": "Description of additional analyses (e.g., sensitivity analysis) (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_meth_analysis_xtra___2",
+    "label": "Description of additional analyses (e.g., sensitivity analysis) (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_meth_analysis_xtra___3",
+    "label": "Description of additional analyses (e.g., sensitivity analysis) (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_meth_analysis_xtra___4",
+    "label": "Description of additional analyses (e.g., sensitivity analysis) (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results___1",
+    "label": "RESULTS (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results___2",
+    "label": "RESULTS (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results___3",
+    "label": "RESULTS (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results___4",
+    "label": "RESULTS (choice=4)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results___5",
+    "label": "RESULTS (choice=5)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results___6",
+    "label": "RESULTS (choice=6)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results___7",
+    "label": "RESULTS (choice=7)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results___8",
+    "label": "RESULTS (choice=8)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results___9",
+    "label": "RESULTS (choice=9)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results___10",
+    "label": "RESULTS (choice=10)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results_isd___1",
+    "label": "Presentation of individual study data (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results_isd___2",
+    "label": "Presentation of individual study data (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results_sum___1",
+    "label": "Presentation of NMA results (summary estimates and CIs/CrIs) (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results_sum___2",
+    "label": "Presentation of NMA results (summary estimates and CIs/CrIs) (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_results_sum___3",
+    "label": "Presentation of NMA results (summary estimates and CIs/CrIs) (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_discussion___1",
+    "label": "DISCUSSION (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_discussion___2",
+    "label": "DISCUSSION (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_discussion___3",
+    "label": "DISCUSSION (choice=3)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_funding___1",
+    "label": "FUNDING (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_funding___2",
+    "label": "FUNDING (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_funding_role___1",
+    "label": "Role of funders for the systematic review (choice=1)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "pr_funding_role___2",
+    "label": "Role of funders for the systematic review (choice=2)",
+    "field_type": "checkbox",
+    "validation": "",
+    "choices": {
+      "1": "Checked",
+      "0": "Unchecked"
+    }
+  },
+  {
+    "name": "prisma_complete",
+    "label": "Complete?",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "0": "Incomplete",
+      "1": "Unverified",
+      "2": "Complete"
+    }
+  },
+  {
+    "name": "data_available",
+    "label": "Data available",
+    "field_type": "truefalse",
+    "validation": "",
+    "choices": {
+      "1": "True",
+      "0": "False"
+    }
+  },
+  {
+    "name": "format",
+    "label": "Format",
+    "field_type": "radio",
+    "validation": "",
+    "choices": {
+      "1": "long",
+      "2": "wide",
+      "3": "iv"
+    }
+  },
+  {
+    "name": "verified",
+    "label": "Verified",
+    "field_type": "truefalse",
+    "validation": "",
+    "choices": {
+      "1": "True",
+      "0": "False"
+    }
+  },
+  {
+    "name": "error",
+    "label": "Error",
+    "field_type": "text",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "dataset",
+    "label": "dataset",
+    "field_type": "file",
+    "validation": "",
+    "choices": {}
+  },
+  {
+    "name": "data_complete",
+    "label": "Complete?",
+    "field_type": "select",
+    "validation": "",
+    "choices": {
+      "0": "Incomplete",
+      "1": "Unverified",
+      "2": "Complete"
+    }
+  },
+  {
+    "name": "dataset_sha256",
+    "label": "Dataset SHA256",
+    "field_type": "text",
+    "choices": {}
+  },
+  {
+    "name": "dataset_url",
+    "label": "Dataset URL",
+    "field_type": "text",
+    "choices": {}
+  }
+]

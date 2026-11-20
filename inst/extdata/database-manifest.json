@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-11-20",
+  "record_count": 1670,
+  "column_count": 410,
+  "dataset_count": 603,
+  "source": "REDCap ODM XML export; all original table values preserved",
+  "resources": [
+    {
+      "file": "catalog.tsv",
+      "size": 1798935,
+      "sha256": "54d469813a56d884de1c11623ee7fa8d84c86fc5a12cb36f0e68e8eecf1c2510"
+    },
+    {
+      "file": "codebook.json",
+      "size": 81886,
+      "sha256": "457d08ffcdbcf9793d1472b3955baad58e66262214746edfef90efe0524dd24d"
+    },
+    {
+      "file": "dataset-manifest.json",
+      "size": 307054,
+      "sha256": "52c3746f69ad8f8eb83a4fe444045e0ddd9362f26d965af2f28b7de8dfef13b6"
+    }
+  ]
+}
