@@ -1,46 +1,23 @@
-response = function () {
-  RCurl::postForm(
-    uri=NMADBURL,
-    token=PUBLICTOKEN,
-    format='csv',
-    content='record'
-  )
+# Legacy raw catalogue helpers now use the bundled snapshot.
+response <- function() {
+  output <- character()
+  connection <- textConnection("output", "w", local=TRUE)
+  utils::write.csv(getNMADB(raw=TRUE), connection, row.names=FALSE, na="")
+  close(connection)
+  paste(output, collapse="\n")
 }
-
-recs = function () {
-  return(read.csv(text = response()))
+recs <- function() getNMADB(raw=TRUE)
+havedata <- function() {
+  records <- recs()
+  records[records$data_available == "1", , drop=FALSE]
 }
-
-havedata = function () {
-  return (recs()[recs()$data_available==1,])
+filename <- function(recid) {
+  if (length(recid) != 1L || is.na(recid) || !grepl("^[A-Za-z0-9_-]+$", as.character(recid))) stop("Invalid record ID.")
+  file.path(getOption("nmadb.upload_dir", "nmadb"), paste0(recid, ".xlsx"))
 }
-
-filename = function (recid) { 
-  out = paste("nmadb/",recid,".xlsx",sep="")
-  return(out)
+importreq <- function(recid) {
+  file <- filename(recid)
+  if (!file.exists(file)) stop("Dataset file does not exist: ", file)
+  .nmadb_admin_post(list(content="file", action="import", record=as.character(recid), field="dataset"), file=file)
 }
-
-importreq = function (recid) {
-  if(file.exists(filename(recid))){
-    print(recid)
-    RCurl::postForm(
-      uri=NMADBURL,
-      token=ADMINTOKEN,
-      content='file',
-      action='import',
-      record=as.character(recid),
-      field='dataset',
-      event='',
-      returnFormat='json',
-      file=fileUpload(filename(recid))
-    )
-  }else{
-    stop("file",recid," doen't exists")
-  }
-}
-
-uploaddatasets = function () {
-  mapply(importreq, havedata()$record_id)
-  print(importreq)
-}
-
+uploaddatasets <- function() lapply(havedata()$record_id, importreq)

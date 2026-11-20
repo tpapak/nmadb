@@ -22,7 +22,8 @@ commit containing the workbooks.
 
 File identity is independent of storage location. A university server or Zenodo
 release can supply an alternative URL if the downloaded bytes have the same
-SHA-256. This snapshot does not change the R package's REDCap download functions.
+SHA-256. The R package resolves downloads through its bundled copy of this manifest and
+verifies the SHA-256 before opening a workbook.
 
 REDCap remains the interface for data entry and database updates. Future
 repeating instruments should extend the association with a stable study ID,

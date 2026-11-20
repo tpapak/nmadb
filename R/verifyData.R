@@ -1,66 +1,22 @@
-
-verifyData = function(recid, updateRecord=F) {
-  print("checking")
-  print(recid)
-  tryCatch({
-      metanet = runnetmeta(recid)
-      if (! is.null(metanet)){
-        if (updateRecord == T) {
-          source("admin.token")
-          updateVerifiedStatus(recid, 1)
-          print("Updated record as verified in database")
-        }
-        out = TRUE
-      }else{
-        out = FALSE
-      }
-    },
-    error = function(e) 
-    {
-      print(e$message) # or whatever error handling code you want
-      if (updateRecord == T) {
-        source("admin.token")
-        updateVerifiedStatus(recid, 0, e$message)
-        print("Updated record as not verified in database")
-      }
-      out = FALSE
-      #stop("not passed")
-    }
-  )
-  return(list(recid=recid,passed=out))
+verifyData <- function(recid, updateRecord=FALSE) {
+  error <- ""
+  passed <- tryCatch({
+    result <- runnetmeta(recid)
+    if (is.null(result) || !inherits(result, "netmeta")) stop("Network analysis did not return a netmeta result.")
+    TRUE
+  }, error=function(e) { error <<- conditionMessage(e); FALSE })
+  if (updateRecord) updateVerifiedStatus(recid, as.integer(passed), error)
+  list(recid=recid, passed=passed)
 }
-
-updateVerifiedStatus = function (recid, isVerified=0, err='') {
-  library(jsonlite)
-  if( isVerified == 1){
-    datain = toJSON(data.frame(record_id = recid, verified = isVerified, error = ''))
-  }else{
-    datain = toJSON(data.frame(record_id = recid, verified = isVerified, error = err))
-  }
-    postForm(
-      uri=NMADBURL,
-      token=ADMINTOKEN,
-      content='record',
-      action='import',
-      format='json',
-      event='',
-      data=datain,
-      returnFormat='json'
-    )
+updateVerifiedStatus <- function(recid, isVerified=0, err="") {
+  .nmadb_admin_post(list(content="record", action="import", format="json",
+    data=jsonlite::toJSON(data.frame(record_id=as.character(recid), verified=isVerified,
+                                    error=if (isVerified == 1) "" else err), dataframe="rows")))
 }
-
-checkRecords = function (records, updateDB=F) {
-  rcs = as.vector(records$"Record.ID")
-  res = Map(function(v) {
-          out = list(rec=v,verified=F)
-          tryCatch({
-            verifyData(v, updateDB)
-            out = list(rec=v,verified=T)
-          },error = function (e){
-            print(e$message)
-            out = list(rec=v,verified=F)
-          })
-         return(out)
-        },rcs)
+checkRecords <- function(records, updateDB=FALSE) {
+  ids <- if ("Record.ID" %in% names(records)) records$Record.ID else records$record_id
+  lapply(ids, function(id) {
+    result <- verifyData(id, updateRecord=updateDB)
+    list(rec=id, verified=result$passed)
+  })
 }
-
