@@ -1,4 +1,4 @@
-# Public reads use the frozen table and hash-verified GitHub datasets.
+# Public reads use the frozen table and hash-verified local or external datasets.
 .nmadb_file <- function(name) {
   directory <- getOption("nmadb.path")
   result <- if (is.null(directory)) system.file("extdata", name, package="nmadb") else file.path(directory, "inst", "extdata", name)
@@ -6,11 +6,23 @@
   result
 }
 
+getManifest <- function() jsonlite::fromJSON(.nmadb_file("database-manifest.json"))
+
+.nmadb_verify_resource <- function(name) {
+  resources <- getManifest()$resources
+  entry <- resources[resources$file == name, , drop=FALSE]
+  file <- .nmadb_file(name)
+  if (nrow(entry) != 1L || file.info(file)$size != entry$size ||
+      digest::digest(file=file, algo="sha256") != entry$sha256)
+    stop("Bundled snapshot resource failed size or SHA-256 verification: ", name)
+  file
+}
+
 getNMADB <- function(raw=FALSE) {
-  catalog <- utils::read.delim(.nmadb_file("catalog.tsv"), colClasses="character",
+  catalog <- utils::read.delim(.nmadb_verify_resource("catalog.tsv"), colClasses="character",
                               check.names=FALSE, na.strings=NULL, quote="\"", comment.char="")
   if (raw) return(catalog)
-  codebook <- jsonlite::fromJSON(.nmadb_file("codebook.json"), simplifyVector=FALSE)
+  codebook <- jsonlite::fromJSON(.nmadb_verify_resource("codebook.json"), simplifyVector=FALSE)
   labels <- stats::setNames(names(catalog), names(catalog))
   for (field in codebook) {
     name <- field$name
@@ -44,14 +56,20 @@ unverifiedStudies <- function() {
 
 exportData <- function(recid, filename) {
   if (length(recid) != 1L || is.na(recid)) stop("Supply one record ID.")
-  manifest <- jsonlite::fromJSON(.nmadb_file("dataset-manifest.json"))$files
+  manifest <- jsonlite::fromJSON(.nmadb_verify_resource("dataset-manifest.json"))$files
   row <- manifest[manifest$record_id == as.character(recid) & manifest$field == "dataset", , drop=FALSE]
   if (nrow(row) != 1L) stop("No dataset is available for record ", recid)
   temporary <- tempfile(fileext=".xlsx")
   on.exit(unlink(temporary), add=TRUE)
   repository <- getOption("nmadb.dataset_root")
+  source_directory <- getOption("nmadb.path")
+  bundled <- if (is.null(source_directory)) {
+    system.file("extdata", "datasets", paste0(row$sha256, ".xlsx"), package="nmadb")
+  } else file.path(source_directory, "inst", "extdata", "datasets", paste0(row$sha256, ".xlsx"))
   if (!is.null(repository)) {
     if (!file.copy(file.path(repository, row$path), temporary)) stop("Unable to read dataset from local checkout.")
+  } else if (nzchar(bundled) && file.exists(bundled)) {
+    if (!file.copy(bundled, temporary)) stop("Unable to read bundled dataset.")
   } else {
     status <- utils::download.file(row$file_url, temporary, mode="wb", quiet=TRUE)
     if (status != 0L) stop("Dataset download failed.")

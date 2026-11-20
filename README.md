@@ -18,12 +18,13 @@ loaded from a remote URL at runtime.
 
 ## Catalogue and datasets
 
-The existing public function names and main return shapes are retained:
+Public query and analysis functions retain their names and main return shapes:
 
 ```r
 library(nmadb)
 catalog <- getNMADB()           # labelled columns, including Record.ID
-raw <- getNMADB(raw=TRUE)       # raw REDCap names and string values
+raw <- getNMADB(raw=TRUE)       # original variable names and string values
+getManifest()                  # database counts and snapshot resource hashes
 nmadatanames(catalog)
 listVerified()
 verifiedStudies()
@@ -38,8 +39,10 @@ exportData("501321", "network.xlsx")
 values outside the original form's validation rules. `codebook.json` provides
 field labels, choices, field types, and original validation annotations.
 These describe the source snapshot, not subsequent changes to the live forms.
-A frozen table is refreshed by exporting the updated REDCap project and
-regenerating the snapshot, rather than querying REDCap on every public read.
+The package reads this frozen snapshot without calling the source database.
+`database-manifest.json` records the snapshot date, record/dataset counts, and
+SHA-256 hashes and sizes of the table, codebook, and file manifest. These
+resources are checked before use. `getManifest()` exposes this information.
 
 `datasets/manifest.json` maps record IDs to original filenames, SHA-256 hashes,
 byte sizes, and commit-pinned GitHub download URLs. Every workbook is verified
@@ -62,19 +65,36 @@ passed through to current `netmeta`. Historical incomplete workbooks or
 atypical effect measures may fail analysis; preserving a workbook does not
 establish its scientific validity.
 
-## REDCap administration
+## Snapshot publishing and compatibility
 
-`response()`, `recs()`, `havedata()`, and `filename()` retain their helper roles.
-`importreq()`, `uploaddatasets()`, `updateVerifiedStatus()`, and verification with
-`updateRecord=TRUE` or `updateDB=TRUE` remain explicit REDCap write operations.
-They require optional `RCurl` and a locally configured `NMADB_API_TOKEN`.
-Set `NMADB_API_URL` or `options(nmadb.api_url=...)` to the intended endpoint.
-No token is included in the package. Cloudflare or server rules may still
-prevent writes; GitHub hosting does not bypass those restrictions.
+Source data collection and snapshot publishing are maintainer workflows outside
+this R package. The source database can be exported as XML in batches, validated,
+and published as a new release. Public package users never call that database.
 
-Administrative writes change the live REDCap project, not this frozen snapshot.
-The old attachment-upload helpers are retained for compatibility; NMADB's
-normal dataset downloads now use GitHub.
+The CRAN package contains no REDCap client, endpoint, token handling, database
+write functions, RCurl dependency, V8 dependency, or JavaScript execution.
+`verifyData()` and `checkRecords()` only return local results. Their former
+`updateRecord` and `updateDB` arguments have been removed, along with
+`updateVerifiedStatus()`, `importreq()`, `uploaddatasets()`, and the API constants.
+`response()`, `recs()`, and `havedata()` remain snapshot-only query helpers;
+`filename()` simply constructs a local filename.
+
+The bundled file manifest's `file_url` values currently point to GitHub, but
+retrieval is host-independent: any download URL returning the expected bytes
+can be used in a future snapshot. A SHA-256 mismatch always raises an error.
+
+## Optional bundled workbooks
+
+An offline distribution can include original workbooks under
+`inst/extdata/datasets/<sha256>.xlsx`. `readByID()` and `exportData()` use a
+bundled workbook before trying its external URL. Both routes verify the same
+original byte size and SHA-256. R's `data/` directory is for R data objects;
+`inst/extdata/` is the appropriate directory for original Excel files.
+
+The regular package keeps the full 15.8 MB collection external to keep the
+CRAN distribution small. An offline GitHub distribution can bundle all files.
+The `nmadb.dataset_root` option can instead point to a local repository checkout
+without copying files into an installed package.
 
 ## Local verification
 

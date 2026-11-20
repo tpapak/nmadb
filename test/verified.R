@@ -4,7 +4,7 @@ verifyVerified = function () {
   vers = as.vector(verifiedStudies()$"Record.ID")
   tryCatch({
     res = Map(function(v) {
-                return (verifyData(v, updateRecord=F))
+                return (verifyData(v))
                     },vers)
     print("SUCCESS")
   }
@@ -18,7 +18,7 @@ verifyVerified = function () {
 
 updateVerified = function () {
   nmadb=getNMADB()
-  checkRecords(nmadb[nmadb$Data.available=="True",],T)
+  checkRecords(nmadb[nmadb$Data.available=="True",])
 }
 
 

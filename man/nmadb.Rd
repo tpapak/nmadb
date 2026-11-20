@@ -1,5 +1,6 @@
 \name{nmadb}
 \alias{nmadb}
+\alias{getManifest}
 \alias{getNMADB}
 \alias{nmadatanames}
 \alias{verifiedStudies}
@@ -13,20 +14,16 @@
 \alias{isOutcomeCompatibleWithMeasure}
 \alias{verifyData}
 \alias{checkRecords}
-\alias{updateVerifiedStatus}
 \alias{response}
 \alias{recs}
 \alias{havedata}
 \alias{filename}
-\alias{importreq}
-\alias{uploaddatasets}
-\alias{NMADBURL}
-\alias{PUBLICTOKEN}
 \title{Query NMADB and retrieve verified network datasets}
 \description{Access the frozen REDCap catalogue and Excel datasets hosted on GitHub.
 Dataset downloads are checked against their original SHA-256 and byte size.
-Legacy network analysis, verification and administrative function names are retained.}
+Network analysis and verification operate without a source database connection.}
 \usage{
+getManifest()
 getNMADB(raw = FALSE)
 nmadatanames(studies)
 verifiedStudies()
@@ -38,15 +35,12 @@ wide2long(data, type = "binary")
 runnetmeta(recid, model = "random", measure = "notset")
 getmetaNetw(indata, type, model = "fixed", tau = NA, sm)
 isOutcomeCompatibleWithMeasure(outcome, measure)
-verifyData(recid, updateRecord = FALSE)
-checkRecords(records, updateDB = FALSE)
-updateVerifiedStatus(recid, isVerified = 0, err = "")
+verifyData(recid)
+checkRecords(records)
 response()
 recs()
 havedata()
 filename(recid)
-importreq(recid)
-uploaddatasets()
 }
 \arguments{
 \item{raw}{Return original variable names and raw string values instead of labelled columns.}
@@ -58,9 +52,6 @@ uploaddatasets()
 \item{model}{Use a fixed/common or random effects model.}
 \item{measure, sm}{Effect measure, such as OR, RR, RD, MD, SMD, HR or IRR.}
 \item{tau}{Reserved compatibility argument. It does not fix heterogeneity.}
-\item{updateRecord, updateDB}{Whether to submit verification results to the configured REDCap project.}
-\item{isVerified}{Verification code, zero or one.}
-\item{err}{Diagnostic to save for an unsuccessful verification.}
 }
 \details{
 Public reads require no API token. \code{getNMADB()} returns labelled columns such
@@ -77,20 +68,31 @@ The \code{netmeta} and \code{meta} packages are needed for network analyses.
 The wide-to-long conversion is implemented locally in R and requires no JavaScript
 or remotely downloaded source code.
 
-REDCap write helpers require the optional \code{RCurl} package and a locally set
-\env{NMADB_API_TOKEN}. Configure \env{NMADB_API_URL} or option \code{nmadb.api_url}
-for the intended project. They do not edit the frozen public snapshot. The
-\code{PUBLICTOKEN} compatibility constant is empty.
+The package includes a versioned catalogue, codebook, dataset manifest and
+\code{database-manifest.json}. The database manifest records resource sizes,
+SHA-256 hashes, snapshot date, and record counts. Bundled resources are verified
+before use. \code{getManifest()} returns this database manifest.
+
+There is no database client, API endpoint, token handling, or database write
+operation in this package. Extraction forms and XML snapshot publication are
+maintainer workflows outside the package. Dataset URLs are independent of their
+hosting provider; every workbook is verified by size and SHA-256.
+
+Offline distributions can bundle workbooks as
+\code{inst/extdata/datasets/<sha256>.xlsx}. A bundled workbook is used before
+its external URL and undergoes the same verification. The regular CRAN package
+keeps the full workbook collection external. An explicit
+\code{nmadb.dataset_root} overrides both bundled and remote retrieval.
 
 For an offline checkout, set \code{options(nmadb.path="/path/to/checkout",
-nmadb.dataset_root="/path/to/checkout")}. Administrative workbook uploads use
-\code{nmadb.upload_dir}, defaulting to \code{"nmadb"}.
+nmadb.dataset_root="/path/to/checkout")}.
+
 }
 \value{Catalogue functions return data frames or names. \code{readByID} returns
 a dataset and its metadata. \code{runnetmeta} and \code{getmetaNetw} return a
 \code{netmeta} result. Verification functions return pass/fail information.
 \code{exportData} saves a verified workbook and invisibly returns its path.
-Write helpers return the REDCap API response.}
+\code{getManifest} returns snapshot metadata and the resource manifest.}
 \examples{
 catalog <- getNMADB()
 head(nmadatanames(catalog))

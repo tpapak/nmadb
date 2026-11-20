@@ -21,12 +21,26 @@ stopifnot(nrow(long) == 3L, identical(names(long), c("id","t","r","n")),
 stopifnot(isOutcomeCompatibleWithMeasure("binary","OR"),
           !isOutcomeCompatibleWithMeasure("continuous","OR"))
 
-# Public package reads and tests never require, or make, administrative writes.
-old <- Sys.getenv("NMADB_API_TOKEN", unset=NA_character_)
-Sys.unsetenv("NMADB_API_TOKEN")
-failed <- try(updateVerifiedStatus("570-1"), silent=TRUE)
-stopifnot(inherits(failed,"try-error"), grepl("NMADB_API_TOKEN",as.character(failed)))
-if (!is.na(old)) Sys.setenv(NMADB_API_TOKEN=old)
+# No database clients, endpoints, tokens, or write operations are exported.
+exports <- getNamespaceExports("nmadb")
+stopifnot(!any(c("importreq", "uploaddatasets", "updateVerifiedStatus", "NMADBURL", "PUBLICTOKEN") %in% exports))
+manifest <- getManifest()
+stopifnot(manifest$record_count == 1670L, manifest$dataset_count == 603L,
+          all(c("catalog.tsv", "codebook.json", "dataset-manifest.json") %in% manifest$resources$file))
+
+# A modified catalogue with the original byte size must fail its manifest hash.
+cache <- tempfile(); dir.create(file.path(cache,"inst","extdata"),recursive=TRUE)
+bundled <- system.file("extdata",package="nmadb")
+invisible(file.copy(list.files(bundled,full.names=TRUE),file.path(cache,"inst","extdata")))
+table <- file.path(cache,"inst","extdata","catalog.tsv")
+bytes <- readBin(table,"raw",n=file.info(table)$size)
+bytes[1] <- as.raw(bitwXor(as.integer(bytes[1]),1L)); writeBin(bytes,table)
+old_path <- getOption("nmadb.path")
+options(nmadb.path=cache)
+rejected_table <- try(getNMADB(),silent=TRUE)
+options(nmadb.path=old_path)
+stopifnot(inherits(rejected_table,"try-error"),grepl("SHA-256",as.character(rejected_table)))
+unlink(cache,recursive=TRUE)
 
 # Real repository integration checks are enabled by an explicit local checkout.
 checkout <- Sys.getenv("NMADB_TEST_CHECKOUT")
@@ -47,6 +61,23 @@ if (nzchar(checkout)) {
     checked <- suppressMessages(checkRecords(data.frame(Record.ID=c("481216","no-such-record"))))
     stopifnot(checked[[1]]$verified, !checked[[2]]$verified)
   }
+  # Original Excel bytes may also be bundled under inst/extdata for offline use.
+  offline <- tempfile(); dir.create(file.path(offline,"inst","extdata","datasets"),recursive=TRUE)
+  invisible(file.copy(list.files(system.file("extdata",package="nmadb"),full.names=TRUE),
+                      file.path(offline,"inst","extdata")))
+  manifest <- jsonlite::fromJSON(system.file("extdata","dataset-manifest.json",package="nmadb"))$files
+  row <- manifest[manifest$record_id=="481216",]
+  bundled_file <- file.path(offline,"inst","extdata","datasets",paste0(row$sha256,".xlsx"))
+  stopifnot(file.copy(file.path(checkout,row$path),bundled_file))
+  options(nmadb.path=offline,nmadb.dataset_root=NULL)
+  bundled <- suppressMessages(readByID("481216"))
+  stopifnot(bundled$type=="binary",bundled$effect=="RR",nrow(bundled$data)>0L)
+  bytes <- readBin(bundled_file,"raw",n=file.info(bundled_file)$size)
+  bytes[1] <- as.raw(bitwXor(as.integer(bytes[1]),1L));writeBin(bytes,bundled_file)
+  rejected_bundle <- try(exportData("481216",tempfile()),silent=TRUE)
+  stopifnot(inherits(rejected_bundle,"try-error"),grepl("SHA-256",as.character(rejected_bundle)))
+  options(nmadb.path=old_path,nmadb.dataset_root=checkout)
+  unlink(offline,recursive=TRUE)
   # A downloaded workbook with altered bytes must not replace the destination.
   fake <- tempfile(); dir.create(fake)
   manifest <- jsonlite::fromJSON(system.file("extdata","dataset-manifest.json",package="nmadb"))$files
