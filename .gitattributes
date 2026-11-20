@@ -1,0 +1,2 @@
+# Empty cells and original free-text whitespace are meaningful table data.
+inst/extdata/catalog.tsv -whitespace
